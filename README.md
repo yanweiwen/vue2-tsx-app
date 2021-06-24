@@ -9,19 +9,19 @@
 6. `vue-tsx-support@3.0.2`
 
 ## 环境配置
-###1. 确保全局安装`yarn`、`nodejs` 12+ 、`@vue/cli`4.x
+### 1. 确保全局安装`yarn`、`nodejs` 12+ 、`@vue/cli`4.x
 ```bash
 yarn global add @vue/cli
 
 yarn global add typescript
 ```
-###2. 使用脚手架创建vue项目
+### 2. 使用脚手架创建vue项目
 ```bash
 vue create <project-name>
 
 cd <project-name>
 ```
-###3. 安装核心依赖
+### 3. 安装核心依赖
 在package.json的devDependencies添加：
 ```js
 {
@@ -38,9 +38,9 @@ cd <project-name>
 }
 ```
 
-###4. 项目编译相关==重要==配置
+### 4. 项目编译相关==重要==配置
 
-####4.1 项目根目录添加vue.config.js文件，配置：
+#### 4.1 项目根目录添加vue.config.js文件，配置：
 ```js
 module.exports = {
   css: {
@@ -62,7 +62,7 @@ module.exports = {
   }
 };
 ```
-####4.2 项目根目录添加tsconfig.json
+#### 4.2 项目根目录添加tsconfig.json
 ```
 {
   "compilerOptions": {
@@ -110,7 +110,7 @@ module.exports = {
   ]
 }
 ```
-####4.3 项目根目录.eslintrc.js
+#### 4.3 项目根目录.eslintrc.js
 ```
 module.exports = {
   root: true,
@@ -140,7 +140,7 @@ module.exports = {
 }
 
 ```
-####4.4 其他配置（可选）
+#### 4.4 其他配置（可选）
 
 src目录添加`shims-tsx.d.ts`文件
 ```ts
